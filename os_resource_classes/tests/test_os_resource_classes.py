@@ -19,10 +19,16 @@ test_os_resource_classes
 Tests for `os_resource_classes` module.
 """
 
+import os_resource_classes as rc
 from os_resource_classes.tests import base
 
 
 class TestOs_resource_classes(base.TestCase):
 
-    def test_something(self):
-        pass
+    def test_id_mapping_strings(self):
+       self.assertEqual('VCPU', rc.ORDERED_CLASSES[0])
+       self.assertEqual('DISK_GB', rc.ORDERED_CLASSES[2])
+
+    def test_id_mapping_symbols(self):
+       self.assertEqual(rc.VCPU, rc.ORDERED_CLASSES[0])
+       self.assertEqual(rc.DISK_GB, rc.ORDERED_CLASSES[2])
