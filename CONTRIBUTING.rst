@@ -12,4 +12,4 @@ submitted for review via the Gerrit tool:
 
 Pull requests submitted through GitHub will be ignored.
 
-Bugs should be filed on Launchpadhttps://bugs.launchpad.net/nova
+Bugs should be filed on Launchpad: https://bugs.launchpad.net/nova

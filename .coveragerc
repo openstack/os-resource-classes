@@ -1,6 +1,7 @@
 [run]
 branch = True
 source = os_resource_classes
+omit = os_resource_classes/tests/*
 
 [report]
 ignore_errors = True
