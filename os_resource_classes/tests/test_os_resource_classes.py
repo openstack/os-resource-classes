@@ -24,9 +24,9 @@ from os_resource_classes.tests import base
 class TestOs_resource_classes(base.TestCase):
 
     def test_id_mapping_strings(self):
-        self.assertEqual('VCPU', rc.ORDERED_CLASSES[0])
-        self.assertEqual('DISK_GB', rc.ORDERED_CLASSES[2])
+        self.assertEqual('VCPU', rc.STANDARDS[0])
+        self.assertEqual('DISK_GB', rc.STANDARDS[2])
 
     def test_id_mapping_symbols(self):
-        self.assertEqual(rc.VCPU, rc.ORDERED_CLASSES[0])
-        self.assertEqual(rc.DISK_GB, rc.ORDERED_CLASSES[2])
+        self.assertEqual(rc.VCPU, rc.STANDARDS[0])
+        self.assertEqual(rc.DISK_GB, rc.STANDARDS[2])

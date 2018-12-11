@@ -37,7 +37,7 @@ import sys
 
 
 # Extend this list, if required, by adding **to the end of it**.
-ORDERED_CLASSES = [
+STANDARDS = [
     # Virtual CPUs
     'VCPU',
     # Memory Megabytes
@@ -65,5 +65,5 @@ def is_custom(resource_class):
 
 # Set symbols that match resource class name strings.
 package = sys.modules[__name__]
-for resource_class in ORDERED_CLASSES:
+for resource_class in STANDARDS:
     setattr(package, resource_class, resource_class)
