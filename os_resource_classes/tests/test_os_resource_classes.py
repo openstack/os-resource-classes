@@ -30,3 +30,21 @@ class TestOs_resource_classes(base.TestCase):
     def test_id_mapping_symbols(self):
         self.assertEqual(rc.VCPU, rc.STANDARDS[0])
         self.assertEqual(rc.DISK_GB, rc.STANDARDS[2])
+
+    def test_standards_tail(self):
+        """A sanity check that developers are paying attention.
+
+        When one or more standard classes are added, change the expected
+        last class to the last one added and the length to the new length
+        of rc.STANDARDS.
+
+        If you arrive here because you've run the tests and they've failed
+        it's possible you've added some standard classes and not thought
+        about their order. You _must_ add new standard classs at the end
+        of the STANDARDS list, otherwise database ids will get confused
+        in the placement service.
+        """
+        expected_last_class = rc.NET_BW_IGR_KILOBIT_PER_SEC
+        expected_length = 14
+        self.assertEqual(expected_last_class, rc.STANDARDS[-1])
+        self.assertEqual(expected_length, len(rc.STANDARDS))

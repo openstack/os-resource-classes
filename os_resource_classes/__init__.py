@@ -53,6 +53,12 @@ STANDARDS = [
     'IPV4_ADDRESS',
     'VGPU',
     'VGPU_DISPLAY_HEAD',
+    # Standard resource class for network bandwidth egress measured in
+    # kilobits per second.
+    'NET_BW_EGR_KILOBIT_PER_SEC',
+    # Standard resource class for network bandwidth ingress measured in
+    # kilobits per second.
+    'NET_BW_IGR_KILOBIT_PER_SEC',
 ]
 
 # Namespace used for custom resource classes
