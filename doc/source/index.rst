@@ -3,28 +3,19 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-===================================================
-Welcome to the documentation of os_resource_classes
-===================================================
+===================
+os-resource-classes
+===================
 
-Contents:
+.. include:: ../../README.rst
 
 .. toctree::
-   :maxdepth: 2
 
-   readme
    install/index
-   library/index
-   contributor/index
-   configuration/index
-   cli/index
    user/index
-   admin/index
-   reference/index
+   contributor/index
 
-Indices and tables
-==================
+Search
+======
 
-* :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`

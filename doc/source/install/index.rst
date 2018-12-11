@@ -1,17 +1,13 @@
-=========================================================
-Resource Classes for OpenStack service installation guide
-=========================================================
+==================
+Installation Guide
+==================
 
-.. toctree::
-   :maxdepth: 2
+``os-resource-classes`` is availabe on `PyPI`_ and may be installed using
+`pip`_::
 
-   get_started.rst
-   install.rst
-   verify.rst
-   next-steps.rst
+    pip install os-resource-classes
 
-The Resource Classes for OpenStack service (os_resource_classes) provides...
+See :doc:`/user/index` for how to use it once it is installed.
 
-This chapter assumes a working setup of OpenStack following the
-`OpenStack Installation Tutorial
-<https://docs.openstack.org/project-install-guide/ocata/>`_.
+.. _PyPI: https://pypi.org/project/os-resource-classes/
+.. _pip: https://pypi.org/project/pip/

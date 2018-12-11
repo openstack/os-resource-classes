@@ -1,9 +1,4 @@
-===========================
- Contributor Documentation
-===========================
-
-.. toctree::
-   :maxdepth: 2
-
-   contributing
-
+============
+Contributing
+============
+.. include:: ../../../CONTRIBUTING.rst
