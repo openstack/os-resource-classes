@@ -1,3 +1,14 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may
+# not use this file except in compliance with the License. You may obtain
+# a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations
+# under the License.
 """Static symbols for resources classes used by OpenStack.
 
 A resource class is a type of countable thing that exists in
@@ -46,6 +57,7 @@ ORDERED_CLASSES = [
 
 # Namespace used for custom resource classes
 CUSTOM_NAMESPACE = 'CUSTOM_'
+
 
 def is_custom(resource_class):
     return resource_class.startswith(CUSTOM_NAMESPACE)
