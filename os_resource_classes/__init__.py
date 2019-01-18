@@ -59,6 +59,10 @@ STANDARDS = [
     # Standard resource class for network bandwidth ingress measured in
     # kilobits per second.
     'NET_BW_IGR_KILOBIT_PER_SEC',
+    # Resource class representing an amount of dedicated CPUs for a single
+    # guest. A dedicated CPU is a physical processor that has been marked
+    # to be used for a single guest only
+    'PCPU',
 ]
 
 # Namespace used for custom resource classes
