@@ -48,3 +48,23 @@ class TestOs_resource_classes(base.TestCase):
         expected_length = 15
         self.assertEqual(expected_last_class, rc.STANDARDS[-1])
         self.assertEqual(expected_length, len(rc.STANDARDS))
+
+    def test_normalize_name(self):
+        values = [
+            ("foo", "CUSTOM_FOO"),
+            ("VCPU", "CUSTOM_VCPU"),
+            ("CUSTOM_BOB", "CUSTOM_CUSTOM_BOB"),
+            ("CUSTM_BOB", "CUSTOM_CUSTM_BOB"),
+            # Bug #1762789: The upper() builtin treats sharp S (\xdf)
+            # differently in py2 vs py3. Make sure normalize_name handles it
+            # properly.
+            (u"Fu\xdfball", u"CUSTOM_FU_BALL"),
+            ("abc-123", "CUSTOM_ABC_123"),
+            ("Hello, world!  This is a test ^_^",
+             "CUSTOM_HELLO_WORLD_THIS_IS_A_TEST_"),
+            ("  leading and trailing spaces  ",
+             "CUSTOM__LEADING_AND_TRAILING_SPACES_"),
+        ]
+        for test_value, expected in values:
+            result = rc.normalize_name(test_value)
+            self.assertEqual(expected, result)

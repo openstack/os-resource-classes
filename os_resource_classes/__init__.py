@@ -25,6 +25,7 @@ The OpenStack placement API provides a way to create these. A
 custom resource class always begins with a "CUSTOM_" prefix.
 """
 
+import re
 import sys
 
 # NOTE(cdent): We don't expect there to be thousands of resource
@@ -77,3 +78,28 @@ def is_custom(resource_class):
 package = sys.modules[__name__]
 for resource_class in STANDARDS:
     setattr(package, resource_class, resource_class)
+
+
+# NOTE(efried): This method was introduced in nova in commit
+# c6231539a7d39dccf3e859eda54e9336bc164c9f and copied from nova in its current
+# form as of 5a4863aa152f58f6de426b3908a75c2cc1b2efca
+def normalize_name(name):
+    """Converts an input string to a legal* custom resource class name.
+
+    Legal custom resource class names are prefixed with CUSTOM_ and contain
+    only the characters A-Z, 0-9, and _ (underscore).
+
+    .. note:: Does not attempt to detect an existing ``CUSTOM_`` prefix, so
+              results starting with ``CUSTOM_CUSTOM_`` (etc.) are possible.
+
+    *Does not attempt to handle length restrictions.
+
+    :param name: A string to be converted.
+    :return: A legal* custom resource class name.
+    """
+    if name is None:
+        return None
+    # Replace non-alphanumeric characters with underscores
+    norm_name = re.sub('[^0-9A-Za-z]+', '_', name)
+    # Bug #1762789: Do .upper after replacing non alphanumerics.
+    return CUSTOM_NAMESPACE + norm_name.upper()
