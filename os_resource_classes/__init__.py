@@ -64,6 +64,10 @@ STANDARDS = [
     # guest. A dedicated CPU is a physical processor that has been marked
     # to be used for a single guest only
     'PCPU',
+    # Resource class representing the number of guests a compute node can
+    # host with memory encrypted at the hardware level.  See
+    # http://specs.openstack.org/openstack/nova-specs/specs/train/approved/amd-sev-libvirt-support.html
+    'MEM_ENCRYPTION_CONTEXT',
 ]
 
 # Namespace used for custom resource classes
