@@ -1,6 +1,6 @@
-===============================
+===================
 os-resource-classes
-===============================
+===================
 
 A list of standardized resource classes for OpenStack.
 
@@ -20,7 +20,7 @@ custom resource class always begins with a ``CUSTOM_`` prefix.
 
 * Free software: Apache license
 * Documentation: https://docs.openstack.org/os-resource-classes/latest
-* Source: https://git.openstack.org/cgit/openstack/os-resource-classes
+* Source: https://opendev.org/openstack/os-resource-classes
 * Bugs: https://storyboard.openstack.org/#!/project/openstack/os-resource-classes
 
 .. _placement API: https://developer.openstack.org/api-ref/placement/
