@@ -68,6 +68,10 @@ STANDARDS = [
     # host with memory encrypted at the hardware level.  See
     # http://specs.openstack.org/openstack/nova-specs/specs/train/approved/amd-sev-libvirt-support.html
     'MEM_ENCRYPTION_CONTEXT',
+    # An accelerator (the "VF" that can be attached to the guest) from an FPGA.
+    'FPGA',
+    # A physical GPU for compute offload.
+    'PGPU',
 ]
 
 # Namespace used for custom resource classes
