@@ -23,4 +23,4 @@ custom resource class always begins with a ``CUSTOM_`` prefix.
 * Source: https://opendev.org/openstack/os-resource-classes
 * Bugs: https://storyboard.openstack.org/#!/project/openstack/os-resource-classes
 
-.. _placement API: https://developer.openstack.org/api-ref/placement/
+.. _placement API: https://docs.openstack.org/api-ref/placement/
