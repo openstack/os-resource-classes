@@ -42,8 +42,7 @@ copyright = u'2017, OpenStack Developers'
 
 # openstackdocstheme options
 repository_name = 'openstack/os-resource-classes'
-bug_project = 'nova'
-bug_tag = ''
+use_storyboard = True
 html_last_updated_fmt = '%Y-%m-%d %H:%M'
 
 # If true, '()' will be appended to :func: etc. cross-reference text.
