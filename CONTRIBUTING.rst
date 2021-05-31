@@ -16,5 +16,5 @@ Bugs should be filed on StoryBoard:
 
 https://storyboard.openstack.org/#!/project/openstack/os-resource-classes
 
-Developers of os-resource-classes can be found in the ``#openstack-placement``
+Developers of os-resource-classes can be found in the ``#openstack-nova``
 IRC channel on the ``webchat.oftc.net``.
