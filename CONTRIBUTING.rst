@@ -17,4 +17,4 @@ Bugs should be filed on StoryBoard:
 https://storyboard.openstack.org/#!/project/openstack/os-resource-classes
 
 Developers of os-resource-classes can be found in the ``#openstack-placement``
-IRC channel on the ``chat.freenode.net``.
+IRC channel on the ``webchat.oftc.net``.
