@@ -72,6 +72,12 @@ STANDARDS = [
     'FPGA',
     # A physical GPU for compute offload.
     'PGPU',
+    # Direction aware and direcitonless resource classes for the network
+    # packet rate measured in kilopackets per second. See
+    # https://specs.openstack.org/openstack/nova-specs/specs/xena/approved/qos-minimum-guaranteed-packet-rate.html
+    'NET_PACKET_RATE_KILOPACKET_PER_SEC',
+    'NET_PACKET_RATE_EGR_KILOPACKET_PER_SEC',
+    'NET_PACKET_RATE_IGR_KILOPACKET_PER_SEC',
 ]
 
 # Namespace used for custom resource classes

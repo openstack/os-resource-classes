@@ -44,8 +44,8 @@ class TestOs_resource_classes(base.TestCase):
         of the STANDARDS list, otherwise database ids will get confused
         in the placement service.
         """
-        expected_last_class = rc.PGPU
-        expected_length = 18
+        expected_last_class = rc.NET_PACKET_RATE_IGR_KILOPACKET_PER_SEC
+        expected_length = 21
         self.assertEqual(expected_last_class, rc.STANDARDS[-1])
         self.assertEqual(expected_length, len(rc.STANDARDS))
 
