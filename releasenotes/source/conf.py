@@ -52,7 +52,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-copyright = u'2017, OpenStack Developers'
+copyright = '2017, OpenStack Developers'
 
 # openstackdocstheme options
 openstackdocs_repo_name = 'openstack/os-resource-classes'
@@ -199,8 +199,8 @@ htmlhelp_basename = 'os_resource_classesReleaseNotesdoc'
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     ('index', 'os_resource_classesReleaseNotes.tex',
-     u'os_resource_classes  Release Notes Documentation',
-     u'OpenStack Foundation', 'manual'),
+     'os_resource_classes  Release Notes Documentation',
+     'OpenStack Foundation', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -230,8 +230,8 @@ latex_documents = [
 # (source start file, name, description, authors, manual section).
 man_pages = [
     ('index', 'os_resource_classesrereleasenotes',
-     u'os_resource_classes  Release Notes Documentation',
-     [u'OpenStack Foundation'], 1)
+     'os_resource_classes  Release Notes Documentation',
+     ['OpenStack Foundation'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -245,8 +245,8 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     ('index', 'os_resource_classes ReleaseNotes',
-     u'os_resource_classes Release Notes Documentation',
-     u'OpenStack Foundation', 'os_resource_classesReleaseNotes',
+     'os_resource_classes Release Notes Documentation',
+     'OpenStack Foundation', 'os_resource_classesReleaseNotes',
      'One line description of project.',
      'Miscellaneous'),
 ]

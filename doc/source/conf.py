@@ -37,8 +37,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'os-resource-classes'
-copyright = u'2017, OpenStack Developers'
+project = 'os-resource-classes'
+copyright = '2017, OpenStack Developers'
 
 # openstackdocstheme options
 openstackdocs_repo_name = 'openstack/os-resource-classes'
@@ -73,8 +73,8 @@ htmlhelp_basename = '%sdoc' % project
 latex_documents = [
     ('index',
      'doc-%s.tex' % project,
-     u'%s Documentation' % project,
-     u'OpenStack Developers', 'manual'),
+     '%s Documentation' % project,
+     'OpenStack Developers', 'manual'),
 ]
 
 # Example configuration for intersphinx: refer to the Python standard library.
