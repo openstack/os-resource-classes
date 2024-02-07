@@ -21,6 +21,6 @@ custom resource class always begins with a ``CUSTOM_`` prefix.
 * Free software: Apache license
 * Documentation: https://docs.openstack.org/os-resource-classes/latest
 * Source: https://opendev.org/openstack/os-resource-classes
-* Bugs: https://storyboard.openstack.org/#!/project/openstack/os-resource-classes
+* Bugs: https://launchpad.net/placement
 
 .. _placement API: https://docs.openstack.org/api-ref/placement/
